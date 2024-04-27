@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripciónt</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ 
+        <h1>Formulario de Inscripción</h1>
+        <form action="/submit" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br>
+    <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required><br>
+    <br>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required><br>
+    <br>
+            <label for="pais">País de procedencia:</label>
+            <input type="text" id="pais" name="pais" placeholder="Ingresa tu país" required><br>
+    <br>
+            <label for="carrera">Carrera deseada:</label>
+            <select id="carrera" name="carrera" required>
+                <optgroup label="Selecciona una opción...">
+                <option value="JOBS TO BE DONE">JOBS TO BE DONE</option>
+                <option value="CLOUD NATIVE">CLOUD NATIVE</option>
+                <option value="FRONTEND">FRONTEND</option>
+                <option value="BACKEND">BACKEND</option>
+                <option value="FUNDAMENTALS">FUNDAMENTALS</option>
+                <option value="PYTHON">PYTHON</option>
+                <option value="MARKETING DIGITAL">MARKETING DIGITAL</option>
+            </optgroup>
+            </select><br>
+    
+            <label for="actividad">¿Estás trabajando actualmente?</label>
+            <input type="radio" id="trabajando" name="actividad" value="Sí" required>
+            <label for="trabajando">Sí</label>
+            <input type="radio" id="noTrabajando" name="actividad" value="No" required>
+            <label for="noTrabajando">No</label><br>
+    
+            <label for="descripcion">Descripción personal (No más de 300 caracteres):
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3v1ipH6EVDlmnTK6tjdgvK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                    Una breve descripcion de mi persona, escuchala asi te inspiras y escribes la tuya</iframe>
+            </label>
+            <br>
+            <textarea id="descripcion" name="descripcion" rows="4" maxlength="300" placeholder="Escribe una breve descripción" required></textarea><br>
+    
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear">
+        </form>
+
+
+</body>
+</html>

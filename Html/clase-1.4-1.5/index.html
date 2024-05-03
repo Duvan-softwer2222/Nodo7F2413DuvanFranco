@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--Comentarios meta-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-de-contacto</title>
+</head>
+<body>
+
+    <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/pages/about.html">Acerca de mi</a></li>
+        <li><a href="/pages/projects/">Mis proyectos</a></li>
+        <li><a href="/pages/contact.html">Contacto</a></li>
+      </ul>
+  
+      <h1>¡Contáctame!</h1>
+  
+      <p><strong>Nombre:</strong>Duvan Andrés Contreras Franco </p>
+      <p><strong>Telefono:</strong> 3145436496 </p>
+      <p><strong>Email:</strong> duvanandrescontrerasfranco@gmail.com</p>
+  
+      <h2>Formulario de Contacto</h2>
+      <form method="post" action="https://fake-backend.sample/contact">
+        <p>
+
+        </p>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="u-firtname">Nombre: </label>
+          <input id="u-firstname" name="u-firstname" type="text" required />
+          <label for="u-lastname">Apellido: </label>
+          <input id="u-lastname" name="u-lastname" type="text" />
+          <br />
+          <label>Genero: </label>
+          <input id="u-gender--male" name="u-gender" type="radio" value="male"
+            required />
+          <label for="u-gender--male">Masculino</label>
+          <input id="u-gender--female" name="u-gender" type="radio" value="female"
+            required />
+          <label for="u-gender--female">Femenino</label>
+          <input id="u-gender--no-binary" name="u-gender" type="radio"
+            value="no-binary" required />
+          <label for="u-gender--no-binary">No binario</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          <label for="u-email">Correo electrónico: </label>
+          <input id="u-email" name="u-email" type="email" required />
+          <br />
+          <label for="u-tel">Teléfono: </label>
+          <input id="u-tel" name="u-tel" type="tel"   />
+        </fieldset>
+        <fieldset>
+
+          <label for="f-type">¿Que puedo hacer por ti?</label>
+          <br />
+          <select id="f-type" name="f-type" required>
+            <optgroup label="Selecciona una opción...">
+            <option value="greets">Darme dinero</option>
+            <option value="quotes">Darme un golpe, pero el mecato</option>
+            <option value="complaint">Jugar conmigo mindustry :(</option>
+        </optgroup>
+          </select>
+
+          <br />
+          <label for="f-date">¿Cuándo te puedo contactar?</label>
+          <br />
+          <input id="f-date" name="f-date" type="datetime-local" />
+          <br />
+          <label for="f-description">Cuentame más...</label>
+          <br />
+          <textarea id="f-description" name="f-description" required></textarea>
+          <br />
+          <label for="f-files">Archivos adjuntos:</label>
+          <br />
+          <input id="f-files" name="f-files" type="file" multiple />
+        </fieldset>
+        <button type="reset">Limpiar</button>
+        <button type="submit">Enviar</button>
+      </form>
+  
+
+
+
+
+<!--- Enviar los datos de un formulario-->
+
+
+<input name="token" type="hidden" value="7WK5T79u5mIzjIXXi2oI9Fglmgivv7RAJ7izyj9tUyQ" />
+
+
+
+
+
+
+
+
+
+<!--- Ejemplos de tipos de formularios
+<section>
+    <form action="/action_page.php">
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+    </section> 
+<br>
+<br>
+
+<section>
+      <label for="cars">Choose a car:</label>
+<select  name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+
+<br>
+<br>
+
+</section>
+
+<section>
+<form action="/action_page.php">
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+</section>
+-->
+</body>
+</html>

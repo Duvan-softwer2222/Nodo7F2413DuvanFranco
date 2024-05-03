@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recursos Multimedia</title>
+  <link rel="shortcut icon" href="img/icono.png">
+  <style>
+    body {
+      background: url(img/fondo.png) no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin: 20px 0;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .media {
+      margin: 20px 0;
+    }
+
+    .media img,
+    .media video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .media audio {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    .download-link {
+      display: block;
+      text-align: center;
+      background: #0078D7;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 20px 0;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .download-link:hover {
+      background: #0056a3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h1>Videos de cómo no ser manco en Mindustry (Mi juego favorito)</h1>
+
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/fNBkDXFv2H4?si=igW5zvLDC7KJmECU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <a class="download-link" href="https://play.google.com/store/apps/details?id=io.anuke.mindustry&hl=en_US">
+        Descarga el juego aquí
+      </a>
+
+      <div class="media">
+        <img src="img/mindustry.png" alt="Imagen de Mindustry">
+      </div>
+
+      <div class="media">
+        <audio controls>
+          <source src="audio.mp3" type="audio/mp3">
+          Código de error 453, Cagaste
+        </audio>
+      </div>
+
+      <div class="media">
+        <video controls>
+          <source src="video1.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+
+      <div class="media">
+        <video controls>
+          <source src="video2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

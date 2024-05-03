@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title> 
+
+    <style>
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+      }
+      h1, h2, h3 {
+          color: #333;
+      }
+      p {
+          font-size: 16px;
+          line-height: 1.6;
+      }
+      ul {
+          list-style-type: none;
+          padding: 0;
+      }
+      ul li {
+          padding: 5px;
+          margin-bottom: 5px;
+          background-color: #e2e2e2;
+          border-radius: 5px;
+      }
+      ol {
+          padding-left: 20px;
+      }
+      ol li {
+          margin-bottom: 5px;
+      }
+      a {
+          text-decoration: none;
+          color: #0077cc;
+      }
+      a:hover {
+          text-decoration: underline;
+      }
+      #introduction-section {
+          background-color: #ddd;
+          padding: 10px;
+          border-radius: 5px;
+      }
+  </style>
+
+</head>
+<body>
+
+<h2 id="introduction-section">Introducción</h2>
+
+<h1>¿Quién soy yo?</h1>
+    <p>
+      ¡Hola! Mi nombre es <strong>Duvan Andres Contreras Franco</strong>, <em>tengo 17 años</em>, vivo en
+      Taparto-Andes-Antioquia, tengo una hermana pequeña <em>de 8 años</em> y se llama <strong>Melissa</strong>, Mi mamá
+      se llama <strong>Leidy Johana Franco Galeano</strong> y <em>tiene 37 años</em>. 
+    </p>
+
+    <h3>¿Cuales son mis hobbies?</h3>
+    <ul>
+      <li>Dibujar</li>
+      <li>Salir a caminar</li>
+      <li>Montar bicicleta</li>
+      <li>Jugar videojuegos</li>
+      <li>Ver anime, leer mangas y novelas</li>
+    </ul>
+
+    <h3>¿Mis habilidades?</h3>
+    <ul>
+      <li>Dibujar</li>
+      <li>Escribir</li>
+      <li>Montar bicicleta</li>
+      <li>Jugar videojuegos</li>
+      <li>Programar</li>
+      <li>Ser sociable</li>
+    </ul>
+
+    <h3>Mis preferencias</h3>
+      <dt>Comidas</dt>
+      <ol>
+        <li>Amburguesa</li>
+        <li>Frijoles</li>
+        <li>Kumis con cereal</li>
+        <li>Golosas</li>
+        <li>Huevo</li>
+        <li>Arroz</li>
+        <li>Sopa de arroz</li>
+      </ol>
+
+      <dt>Series</dt>
+      <ol>
+        <li>Over lord</li>
+        <li>One piece</li>
+        <li>Hombres de negocios</li>
+        <li>Dragon ball</li>
+        <li>Bleach</li>
+        <li>Black Clover</li>
+      </ol>
+
+      <dt>Personas</dt>
+      <ol>
+        <li>Honest@s</li>
+        <li>Direct@s</li>
+        <li>Fuertes</li>
+        <li>Gracios@s</li>
+      </ol>
+    </dl>
+
+    <dt>Libros</dt>
+    <ol>
+      <li>La vida despues des la muerte</li>
+      <li>Lector omniciente</li>
+    </ol>
+  </dl>
+
+  <h1>Tipos de hipervínculos</h1>
+
+<ul>
+<!-- ENLACES EXTERNOS -->
+<li><a href="https://www.youtube.com/watch?v=AIGnRc7F86Q" target="_blank">Enlaces externos</a></li>
+
+<!-- ENLACES INTERNOS -->
+
+
+  <li><a href="contact.html">Enalces internos</a></li>
+  <li><a href="about.html">Enalces internos</a></li>
+
+
+<!-- Ruta absoluta -->
+
+<li><a href="/Absoluta/ruta.html">RUTA ABSOLUTA</a></li>
+
+
+<!-- Ruta relativa (./) Indica que se esta haciendo referencia a una ubicación en 
+  la misma carpeta, donde se encuentra el archivo donde sde esta escribiendo.-->
+
+<li><a href="./contact.html">Ruta relativa </a></li>
+
+<!-- Ruta relativa (../) Indica que se esta haciendo referencia a una ubicacion que esta 
+  "una carpeta atras" de la ubicacion donde se esta escribiendo.-->
+
+<li><a href="../relativa.html">Ruta relativa </a></li>
+
+<li><a href="#introduction-section">Enlace a la sección introductoria</a></li>
+</ul>
+
+</body>
+</html>

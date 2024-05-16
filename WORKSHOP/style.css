@@ -82,12 +82,12 @@ margin-bottom: 10px;
         grid-column: span 2;
     }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .card {
         display: none;
     }
 }
-@media (min-width: 769px){ 
+@media (max-width: 769px){ 
     .card1{
         display: none;
 
